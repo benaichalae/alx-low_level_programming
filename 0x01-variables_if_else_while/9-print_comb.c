@@ -8,10 +8,16 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 48; n <= 57; n++)
 	{
-	printf("%d, ", n);
+	putchar(n);
+	if (n == 57)
+	{
+	continue;
 	}
-	printf("\n");
+	putchar(',');
+	putchar(' ');
+	}
+	putchar('\n');
 	return (0);
 }
