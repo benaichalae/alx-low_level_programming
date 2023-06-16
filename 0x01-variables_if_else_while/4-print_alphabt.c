@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+* main - Entry point
 * Description: 'the program's description'
 * Return: Always 0 (Success)
 */
@@ -10,7 +10,10 @@ int main(void)
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
+	if (!(letter == 'q' || letter == 'e'))
+	{
 	putchar(letter);
+	}
 	}
 	putchar('\n');
 	return (0);
