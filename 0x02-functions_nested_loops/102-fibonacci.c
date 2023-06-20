@@ -9,6 +9,8 @@ int main(void)
 	unsigned long i, j, k;
 
 	counter = 0;
+	i = 0;
+	j = 1;
 	while (counter < 50)
 	{
 		k = i + j;
