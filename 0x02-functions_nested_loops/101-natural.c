@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- *
+ * main - sum of all number that are multiples of 3 or 5
+ * Return: always 0
  */
 int main(void)
 {
