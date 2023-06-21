@@ -6,23 +6,23 @@
 int main(void)
 {
 	int counter;
-	unsigned long i, j, k;
+	unsigned long i, j, k, l, u;
 
 	counter = 0;
 	i = 0;
 	j = 1;
+	k = 2;
 	while (counter < 50)
 	{
-		k = i + j;
-		if (k >= 4000000)
+		if (j < 4000000 && (j % 2) == 0)
 		{
-			k = k - i;
-			printf("%lu\n", k);
-			break;
+			i = i + j;
 		}
-		i = j;
+		u = j + k;
 		j = k;
+		k = u;
 		counter++;
 	}
+	printf("%lu\n", i);
 	return (0);
 }
