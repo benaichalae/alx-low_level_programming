@@ -6,7 +6,7 @@
 int main(void)
 {
 	int counter;
-	unsigned long i, j, k, l, u;
+	unsigned long i, j, k, u;
 
 	counter = 0;
 	i = 0;
