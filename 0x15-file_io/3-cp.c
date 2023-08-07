@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		bytes_write = write(t, buffer, r);
+		bytes_write = write(t, buf, bytes_read);
 		if (t == -1 || bytes_write == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
